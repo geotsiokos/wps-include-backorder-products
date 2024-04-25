@@ -22,7 +22,7 @@ class Wps_Include_Backorder_Products {
 	public static function woocommerce_product_search_engine_stage_parameters( $args, $stage ) {
 		error_log( 'arguments' );
 		error_log( print_r( $args, true ) );
-		$args['stock'] = 'instock, backorder';
+		$args['stock'] = 'instock,onbackorder';
 		return $args;
 	}
 } Wps_Include_Backorder_Products::init();
